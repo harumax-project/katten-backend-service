@@ -7,6 +7,8 @@ app.use(express.json())
 app.use(cors(CORS_OPTIONS))
 
 app.route('/').get((req, res) => {
+  const headers = req.headers
+  console.log(headers)
   res.send('welcome to katten backend service!')
 })
 
