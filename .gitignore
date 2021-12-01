@@ -2,3 +2,4 @@
 /dist
 logfile
 .env
+.DS_Store
