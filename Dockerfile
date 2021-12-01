@@ -7,10 +7,10 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install --production
+RUN npm install
 
 COPY ./ ./
 
-RUN npm run tsc
+RUN npm run build
 
 CMD ["npm", "run", "start"]
